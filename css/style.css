@@ -1,0 +1,1117 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*/list-style: none;*/
+	text-decoration: none;
+
+}
+
+body {
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 20px;
+	background color: #f5f7f3;
+	margin: 0;
+	color: #37372f;
+}
+
+h1, h2, h3 {
+	font-family: "Playfair", Times, serif;
+}
+
+strong {
+	font-weight: 700;
+	color: #518790;
+}
+
+/*header*/
+.header_container {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	background-image: url(../images/header3.jpg); 
+	background-position: center;
+}
+
+.header {
+	padding: 0px;
+	text-align: left;
+  color: #1D3234;
+  padding-left: 50px;
+}
+.header a:visited {
+	color: black;
+}
+
+.header h1 {
+	font-size: 70px;
+	font-family: "Playfair";
+	font-weight: 800;
+}
+
+
+/*menù di navigazione*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #518790;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a:hover:not(.active) {
+	background-color: #487b87;
+	transition: 0.3s ease-out;
+}
+.navbar .active {
+	background-color: #2C4A4E; 
+}
+
+.navbar a.split {
+  float: right;
+  color: white;
+
+}
+.navbar .material-symbols-outlined {
+	color: white;
+	vertical-align: middle;
+}
+
+
+/*FOOTER*/
+
+footer {
+	background-color: #34565B;
+
+}
+.footer_content {
+	float: left;
+	padding: 20px 30px;
+	color: white;
+}
+.footer_content p {
+	padding-top: 5px;
+	font-size: 18px;
+}
+
+.footer_content a {
+	color: white;
+}
+.footer_content a:visited {
+	color: white;
+}
+.footer_content a:hover {
+	color: #F6AB13;
+	transition: 0.3s ease-out;
+}
+
+
+/*righe iniziali in home page per la presentazione*/
+
+#presentazione_home {
+	background-color: #f5f7f3;
+	font-size: 27px;
+	text-align: center;
+	padding: 30px 50px;
+	border-bottom-color: #343E28;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+#presentazione_home  p {
+		margin-bottom: 25px;
+}
+
+#presentazione_home span {
+	color: #ECA009;
+	font-weight: 600;
+}
+
+/* area destinata alla ricerca per temi e carosello */
+
+.ricerca_per {
+	background-color: #f5f7f3;
+	padding-top: 30px;
+	padding-bottom: 80px;
+	
+
+}
+h2.page_titles {
+	text-align: center;
+	font-size: 50px;
+	font-family: "Playfair";
+	padding-bottom: 50px;
+}
+
+.carosello_container {
+	box-sizing: border-box;
+	max-width: 80%;
+  position: relative;
+ 	margin: auto;
+}
+.mySlides {
+	display: none;
+}
+.prev, .next {
+	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+ 	margin-top: -22px;
+ 	padding: 16px;
+ 	color: white;  	
+ 	font-weight: bold;
+  font-size: 18px;
+ 	transition: 0.6s ease;
+ 	border-radius: 0 3px 3px 0;
+ 	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #D8E7E9;
+  font-size: 40px;
+  font-family: "Playfair";
+  font-weight: 200;
+  padding: 20px 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* seconda fascia destinata a ulteriori informazioni */
+
+.more_informations {
+	background-color: #f5f7f3;
+}
+h2.card_titles {
+	font-family: "Playfair";
+	font-size: 35px;
+}
+.column {
+  float: left;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 50px 8px;
+
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+	border: 3px solid #518790;
+	box-shadow: none;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 20px 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+.column a:visited {
+	color: #37372f; /*questo è il colore quasi nero*/
+}
+
+/*Stile relativo al visualizzatore pdf*/
+
+.visualizzatore_pdf {	
+		background-color: #f5f7f3;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 50px 0px;
+}
+
+.visualizzatore_pdf p {
+	padding-bottom: 25px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.visualizzatore_pdf a {
+	color: #B17806;
+}
+
+.visualizzatore_pdf a:visited {
+	color: #B17806;
+}
+
+.visualizzatore_pdf a:hover {
+	text-decoration: underline;
+}
+
+.visualizzatore_pdf iframe {
+	margin: auto;
+	width: 90%;
+	height: 600px;
+}
+
+.tagcloud_container {
+	display: flex;
+	flex-direction: row;
+	background-color: #f5f7f3;
+	padding: 60px 0px;
+}
+
+.blocco_testo {
+	padding: 0px 30px;
+}
+.blocco_testo h3 {
+	font-size: 35px;
+	font-family: "Playfair";
+}
+
+/* STILE RELATIVO ALLA PAGINA DELL'INDICE*/
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #f5f7f3;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #737373;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color:  #a6a6a6;
+  text-decoration: none;
+}
+ul.breadcrumb li {
+  color: #a6a6a6;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #595959;
+  text-decoration: underline;
+
+}
+
+/*#contenuto_pagina_indice {
+	background-color: #f5f7f3;
+	display: flex;
+	flex-direction: row;
+}*/
+
+#descrizione_indice {
+	padding: 25px 20px;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #a6a6a6;
+	border-top: solid;
+	border-top-width: 1px;
+	border-top-color: #a6a6a6;
+	background-color: #f5f7f3;
+}
+#descrizione_indice h2 {
+ font-family: "Playfair";
+ font-size: 40px;
+}
+
+#whole_index {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: #f5f7f3;
+}
+/*styling sidebar*/
+
+#sidebar_container {
+	background-color: #f5f7f3;
+	height: 100%;
+	position: sticky;
+	top: 51px;
+	font-size: 24px;
+	
+}
+
+.sidebar {
+  margin-top: 20px;
+  width: 300px;
+  background-color: #E5EEF0;
+  height: 400px;
+  overflow: auto;
+  border: solid 1px #BED5DA;
+  border-radius: 5px;
+
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px 30px;
+  text-decoration: none;
+}
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/* !!!! vedere questo effetto per barra di navigazione superiore!!! */
+.sidebar a:hover:not(.active) {
+  background-color: #BED5DA;
+  color: #629AA7;
+  transition: 0.3s
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: sticky;
+  }
+  .sidebar a {float: left;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+/* styling del contenuto dell'indice*/
+#index_container {
+	height:800px;
+	flex: 1;
+	overflow: auto;
+	padding-bottom: 20px;
+}
+#index_text {
+
+	margin: 20px;
+}
+#index_text h2, ul {
+	padding-top: 20px;
+	padding-left: 60px;
+}
+#index_text li a {
+	color: #F6AB13;
+}
+#index_text li a:visited {
+		color: #F6AB13;
+}
+#index_text li a:hover {
+	color: #B17806;
+}
+
+
+#index_text li{
+	font-size: 20px;
+	padding-bottom: 8px;
+}
+#index_text h2 {
+	font-size: 35px;
+	font-family: "Playfair";
+}
+
+
+/* PAGINA CERCA */
+
+/* barra di ricerca */
+.search {
+	--padding: 14px;
+
+	width: max-content;
+	display: inline-flex;
+	align-items: center;
+	padding: var(--padding);
+	border-radius: 28px;
+	background: #E5EFF0;
+	width: 600px;
+	transition: box-shadow;
+	align-self: center;
+	transition: background 0.25s;
+	
+}
+
+
+.search_input {
+	font-size: 16px;
+	color: #333333;
+	margin-left: var(--padding);
+	outline: none;
+	border: none;
+	background: transparent;
+	flex: 1;
+
+}
+.search:focus-within {
+	background: #CBDFE2;
+}
+.search_input::placeholder,
+.material-symbols-outlined {
+	color: #487b87;
+}
+
+#contenuto_cerca {
+	background-color: #f5f7f3;
+	padding-bottom: 100px;
+	
+}
+#cerca {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 40px;
+	font-family: "Playfair";
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#messaggio_pagina {
+	font-size: 25px;
+	color: #D6DECE;
+	text-align: center;
+	background-color: #f5f7f3;
+	padding-top: 30px;
+	padding-bottom: 700px;
+	font-weight: 100;
+}
+
+
+/*PAGINA L'OPERA*/
+#messaggio_opera {
+	padding: 30px;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #a6a6a6;
+	border-top: solid;
+	border-top-width: 1px;
+	border-top-color: #a6a6a6;
+	background-color: #f5f7f3;
+}
+#messaggio_opera h2 {
+	padding-bottom: 15px;
+	font-family: "Playfair";
+	font-size: 40px;
+}
+#whole_tab {
+	padding-top: 20px;
+	background-color: #f5f7f3;
+	height: 1000px;
+}
+
+.tab {
+  float: left;
+  border: 1px solid #BED5DA;
+  border-radius: 5px;
+  background-color: #E5EEF0;
+  width: 20%;
+  height: 420px;
+  overflow: auto;
+  position: sticky;
+  top: 60px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  font-size: 30px;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #D8E6E9;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #BED5DA;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 10px 40px;
+  width: 73%;
+  border-left-width: 1px;
+  height: auto;
+  background-color: #f5f7f3;
+
+}
+.tabcontent ul {
+	padding-top: 20px;
+	padding-left: 25px;
+
+}
+.tabcontent li {
+	padding-bottom: 10px;
+	color: #37372f;
+	list-style-type: circle;
+}
+.tabcontent a:visited {
+	color: #37372f;
+}
+.tabcontent li:hover {
+	color: #B17806;
+	text-decoration: underline;
+}
+
+.tabcontent h3 {
+	font-family: "Playfair";
+	font-size: 35px;
+}
+
+/*PAGINA ITEM*/
+.img-magnifier-container {
+  position: relative;
+  text-align: center;
+  background-color: #f5f7f3;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.cornice_foto {
+	width: 800px;
+	position: relative;
+	margin: auto;
+}
+
+
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+
+.icons_container {
+	height: 70px;
+	background-color: #f5f7f3;
+}
+
+.icons_group {
+	text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    background-color: #E0E7DA;
+}
+
+.fa-heart {
+	color: #D5370B;
+	background-color: transparent;
+} 
+
+.fa-download {
+	color: #2C4A4E;
+	background-color: transparent;
+}
+
+.fa-link {
+	color: #B17806;
+	background-color: transparent;
+}
+
+hr {
+	border-color: white;
+	border-width: 1px;
+}
+
+.item_description {
+	 background-color: #f5f7f3;
+	 padding-top: 40px;
+	 padding-bottom: 100px;
+
+	
+}
+
+.item_infos {
+	width: 60%;
+	height: auto;
+	text-align: left;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.item_infos h2 {
+	font-size: 40px;
+	font-family: "Playfair";
+	color: #34565B
+}
+.item_infos h2, h3 {
+	padding-bottom: 20px;
+	;
+}
+.item_infos h3 {
+	color: #797967;
+	font-size: 30px;
+	font-family: "Playfair";
+	font-weight: 200;
+}
+
+.item_infos h4 {
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	font-weight: 400;
+
+}
+
+.item_infos p {
+	color: #797967;
+	font-style: italic;
+	padding-bottom: 20px;
+}
+
+.metadata {
+	padding-top: 50px;
+	width: 60%;
+	height: auto;
+	text-align: left;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.metadata h3 {
+	font-size: 25px;
+	font-family: "Open sans";
+	font-weight: 600;
+	color: #2C4A4E;
+}
+
+.metadata p {
+	padding: 10px;
+}
+
+.metadata p a {
+	color: #B17806;
+}
+
+.metadata p a:visited {
+	color: #B17806;
+}
+
+.metadata p a:hover {
+	text-decoration: underline;
+}
+
+span.categorie {
+	font-size: 22px ;
+	font-weight: 600;
+	
+}
+
+.altre_info {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 50px;
+}
+
+.altre_info h3 {
+	font-size: 25px;
+	font-family: "Open sans";
+	font-weight: 600;
+	color: #2C4A4E;
+}
+
+.altre_info p {
+	padding-bottom: 30px;
+}
+
+.map {
+	align-self: center;
+	width: 100%;
+}
+
+.altre_info a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.altre_info a:visited {
+	color: inherit;
+}
+
+.altre_info a:hover {
+	color: #B17806;
+	text-decoration: underline;
+}
+
+.interessa_anche {
+	background-color: #f5f7f3;
+	padding-top: 50px;
+}
+
+.interessa_anche h3 {
+	text-align: center;
+	font-size: 25px;
+	font-family: "Open sans";
+	font-weight: 600;
+	color: #2C4A4E;
+	padding-bottom: 50px;
+}
+
+
+div.gallery {
+  border: 1px solid #BED5DA;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.gallery:hover {
+  border: 2px solid #518790;
+  border-radius: 10px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px 5px;
+  text-align: center;
+}
+div.desc p {
+	font-size: 15px;
+	color: #797967;
+}
+
+div.desc h4 {
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+
+
+.responsive {
+  padding: 0 10px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery_container {
+	padding-bottom: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+/*PAGINA DEFORMITà UMANE*/
+.main {
+	display: flex;
+	flex-direction: row;
+}
+
+.sezione_filtri {
+	background-color: #f5f7f3;
+	padding-bottom: 50px;
+	width: 24%;
+}
+
+.sezione_filtri h4 {
+	padding: 30px 15px;
+}
+
+.filtri {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+	position: sticky;
+	top: 65px;
+}
+
+.accordion {
+  background-color: #E5EEF0;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #D8E6E9;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding:5px 0px;
+  background-color: #F2F7F8;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+.lista_capitoli, .contenuti_aggiuntivi {
+	padding: 10px 20px;
+	border: solid;
+	border-width: 1px;
+	border-color: #ccc;
+	margin-left: 5%;
+	margin-right: 10%;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.ordine_alfabetico {
+	display: flex;
+	flex-direction: column;
+}
+
+.alphabeth_button {
+	border: none;
+  outline: none;
+	background-color: #F6AB13;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 10%;
+
+}
+.alphabeth_button:hover {
+	background-color: #B17806;
+}
+
+.contenitore_foto {
+	width: 76%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: #f5f7f3;
+	padding-bottom: ;
+}
+
+.responsive2 {
+	margin: 3%;
+}
+
+.pagination_container {
+	background-color: #f5f7f3;
+	padding: 70px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+/* Pagination links */
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  margin
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: #518790;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+/*PAGINA PROGETTO*/
+.contenitore_progetto {
+	display: flex;
+	flex-direction: row;
+	background-color: #f5f7f3;
+}
+
+.contenitore_sommario {
+	position: relative;
+	width: 25%;
+}
+.sommario {
+	padding-top: 30px;
+	padding-left: 50px;
+	position: sticky;
+	top: 51px;
+	width: 100%;
+}
+
+.sommario li {
+		padding: 7px 0px;
+		font-size: 23px;
+}
+
+.sommario h2 {
+	font-size: 40px;
+}
+
+.sommario a {
+	color: inherit;
+}
+
+.sommario a:visited {
+	color: inherit;
+}
+
+.sommario a:hover {
+	text-decoration: underline;
+	color: #629AA7;
+}
+
+.corpo_progetto {
+	width: 75%;
+	padding: 30px;
+}
+
+.corpo_progetto h2 {
+	padding: 20px 0px;
+	font-family: "Open Sans";
+	font-weight: 700;
+}
+
+.corpo_progetto h3 {
+	font-family: "Open Sans";
+	padding: 15px 0px;
+	font-weight: 600;
+}
+
+.corpo_progetto p {
+	padding: 15px 0px;
+}
+
+.corpo_progetto li {
+	padding: 7px 0px;
+}
+
+.corpo_progetto ul {
+	list-style-type: circle; 
+}
+
+.corpo_progetto a {
+	color: #F6AB13;
+	text-decoration: underline;
+}
+
+.corpo_progetto a:visited {
+	color:  #B17806;
+}
+
+.corpo_progetto a:hover {
+	color: #F6AB13;
+	text-decoration: underline;
+}
