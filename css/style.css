@@ -277,6 +277,11 @@ h2.card_titles {
 .title {
   color: grey;
 }
+
+.column a {
+	color: #37372f
+}
+
 .column a:visited {
 	color: #37372f; /*questo è il colore quasi nero*/
 }
@@ -1092,6 +1097,7 @@ div.desc h4 {
 
 .corpo_progetto p {
 	padding: 15px 0px;
+	line-height: 33px;
 }
 
 .corpo_progetto li {
